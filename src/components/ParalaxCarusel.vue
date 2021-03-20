@@ -2,7 +2,7 @@
   <v-carousel
       cycle
       hide-delimiters
-      height="650"
+      height="200"
       show-arrows-on-hover
   >
     <v-carousel-item
@@ -10,14 +10,21 @@
         :key="i"
         :src="item.src"
     >
+      <template v-slot:default>
+        <v-parallax     height="200"
+                        :src="item.src">
 
-        <v-row
+          <v-row
 
-            class="fill-height"
-            align="center"
-            justify="center"
-        ><span class="mytitlesliderman">{{item.title}}</span>
-        </v-row>
+              class="fill-height"
+              align="center"
+              justify="center"
+          ><span class="mytitlesliderman">Это слайд</span>
+          </v-row>
+        </v-parallax>
+      </template>
+
+
 
 
 
