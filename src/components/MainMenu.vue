@@ -1,25 +1,24 @@
 <template>
-  <div>
-    <v-toolbar
-        dark
-        dense
-        prominent
-        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-    >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Vuetify</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-export</v-icon>
-      </v-btn>
-    </v-toolbar>
-  </div>
+  <v-app-bar
+      absolute
+      color="rgba(255, 0, 0, 0.0)"
+      elevate-on-scroll
+      scroll-target="#scrolling-techniques-7"
+      dark>
+    <v-toolbar-title>L A B R I C K</v-toolbar-title>
+  </v-app-bar>
 </template>
+
 <script>
 export default {
   name: 'MainMenu'
 }
 </script>
+
+<style scoped>
+.v-toolbar__title {
+  font-size: 2.5em !important;
+}
+
+</style>
