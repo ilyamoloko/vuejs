@@ -3,16 +3,7 @@
     <MainMenu/>
 
     <v-main>
-      <v-carousel>
-        <v-carousel-item
-            v-for="(item,i) in items"
-            :key="i"
-            :src="item.src"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-
-        ></v-carousel-item>
-      </v-carousel>
+      <carusel :items="items"/>
     </v-main>
   </v-app>
 </template>
@@ -21,11 +12,12 @@
 
 
 import MainMenu from "./components/MainMenu";
+import Carusel from "./components/Carusel";
 
 export default {
   name: 'App',
 
-  components: {MainMenu},
+  components: {Carusel, MainMenu},
 
   data() {
     return {
